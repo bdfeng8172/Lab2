@@ -7,7 +7,7 @@ we haven't already included this header*/
 
 /* your functions go here */
 // Note: main() goes in the asgn2.c file
-int PowerOfTwo(int n) {
+int powerOfTwo(int n) {
     return (n != 0) && ((n & (n - 1)) == 0);
 }
 
@@ -24,7 +24,7 @@ void introToCS330(int n) {
         printf("UAB\n");
     } else if (n % 3 == 0) {
         printf("CS\n");
-    } else if (PowerOfTwo(n)) {
+    } else if (powerOfTwo(n)) {
         printf("HELLO\n");
     } else {
         printf("%d\n", n * n * n); // Cube of n
@@ -33,7 +33,7 @@ void introToCS330(int n) {
 
 void printHELLO(int n) {
     for (int i = 0; i <= n; i++) {
-        if (PowerOfTwo(i)) {
+        if (powerOfTwo(i)) {
             printf("HELLO ");
         } else {
             printf("%d ", i);
@@ -48,6 +48,7 @@ void grader(float avg_exams, float avg_hw, int attendance) {
     } else {
         printf("FAIL\n");
     }
+}
 
 int paintGallons(float length, float width, float height) {
     // Calculate total surface area for paint
